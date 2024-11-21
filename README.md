@@ -4,7 +4,7 @@ I'm a Web Developer and Software Engineer, also an OpenSource enthusiast ✨.<br
 You can also find more about me at [My Personal Blog](https://iranmanesh999.ir/)
 
 <pre>
-  - 🌱 I’m currently learning  Js  and  Shell scripting
+  - 🌱 I’m currently learning Js and Shell scripting
 </pre>
 <!--
 Here are some ideas to get you started:
