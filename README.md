@@ -3,7 +3,7 @@ Im Ali iranmanesh :)
 I'm a Web Developer and Software Engineer, also an OpenSource enthusiast ✨.
 You can also find more about me at [My Personal Blog](https://iranmanesh999.ir/)
 
-- 🌱 I’m currently learning Js and Shell scripting
+- 🌱 I’m currently learning  Js  and  Shell scripting
 
 <!--
 Here are some ideas to get you started:
