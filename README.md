@@ -1,14 +1,14 @@
 ## Hi there 👋
-Im Ali iranmanesh :)
-I'm a Web Developer and Software Engineer, also a GNU/Linux enthusiast ✨<br>
+I'm Ali iranmanesh :)
+A Web Developer and Software Engineer, also a GNU/Linux enthusiast ✨<br>
 You can also find more about me at [My Personal Blog](https://iranmanesh999.ir/)
 
 <pre>
   - 🌱 I’m currently learning Js and Shell scripting
 </pre>
-<!--
-Here are some ideas to get you started:
 
+<!--
+Example: 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
