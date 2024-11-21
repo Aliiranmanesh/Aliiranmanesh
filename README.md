@@ -1,6 +1,6 @@
 ## Hi there 👋
 Im Ali iranmanesh :)
-I'm a Web Developer and Software Engineer, also an OpenSource enthusiast ✨.<br>
+I'm a Web Developer and Software Engineer, also an OpenSource enthusiast ✨<br>
 You can also find more about me at [My Personal Blog](https://iranmanesh999.ir/)
 
 <pre>
