@@ -1,10 +1,11 @@
 ## Hi there 👋
 Im Ali iranmanesh :)
-I'm a Web Developer and Software Engineer, also an OpenSource enthusiast ✨.
+I'm a Web Developer and Software Engineer, also an OpenSource enthusiast ✨.<br>
 You can also find more about me at [My Personal Blog](https://iranmanesh999.ir/)
 
-- 🌱 I’m currently learning  Js  and  Shell scripting
-
+<pre>
+  - 🌱 I’m currently learning  Js  and  Shell scripting
+</pre>
 <!--
 Here are some ideas to get you started:
 
