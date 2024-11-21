@@ -1,7 +1,7 @@
 ## Hi there 👋
 I'm Ali iranmanesh :)
 A Web Developer and Software Engineer, also a GNU/Linux enthusiast ✨<br>
-You can also find more about me at [My Personalb blog](https://iranmanesh999.ir/)
+You can also find more about me at [My Personal blog](https://iranmanesh999.ir/)
 
 <pre>
   - 🌱 I’m currently learning Js and Shell scripting
