@@ -1,21 +1,226 @@
 /* App Fonts */
-
-@font-face {
-    font-family: "TTNorms";
-    src: url("../fonts/TTNorms-Regular.otf") format("openType");
-}
-
-@font-face {
-    font-family: "TTNorms Medium";
-    src: url("../fonts/TTNorms-Medium.otf") format("openType");
-}
-
 @font-face {
     font-family: "TTNorms Light";
     src: url("../fonts/TTNorms-Light.otf") format("openType");
 }
+html {
+    box-sizing: border-box;
+    font-size: 20px;
 
-@font-face {
-    font-family: "Times Roman Italic";
-    src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "TTNorms Light";
+    background-color: #111111;
+    color: #fafafa;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+        
+}
+.header
+,.skills
+,.about
+,.footer__wrapper__items
+,.projects{
+    margin-bottom: 4rem;
+}
+/* --------------------> nav */
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 1rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+.nav__link h1{
+    font-size: 1rem;
+}
+.nav__social{
+    display: flex;
+    gap: 0.5rem;
+
+}
+/* --------------------> end nav */
+.title__description h1{
+    margin-bottom: 0;
+
+}
+.title__description p{
+    text-align: justify;
+}
+.title{
+    display: flex;
+    gap: 3rem;
+}
+.title__image{
+    display: flex;
+    flex-basis: 30%;
+
+}
+.title__image img{
+    object-fit: cover;
+    width: 100%;
+    height: inherit;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.title__description{
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: column;
+
+}
+.title__description button{
+    min-width: 20%;
+    max-width: 20%;
+
+}
+.icons{
+    fill:#fafafa;
+}
+/* ----------------> button */
+.gradient-border-button {
+    margin-top: 0.5rem;
+    position: relative;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    color: white;
+    background: #1e293b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gradient-border-button::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background: linear-gradient(45deg, #60a5fa, #a78bfa, #60a5fa);
+    border-radius: 10px;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+.gradient-border-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4);
+}
+
+/* --------------------------> end of button  style*/
+
+/* --------------------------> start main section skills */
+.skills{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.skills__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem ;
+    
+
+}
+.skills__card{
+    width: 48%;
+    padding: 1rem 2rem 1rem 1rem;
+    background-color: #2f2f2f;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.skills__card h4{
+    margin: 0;
+}
+/* -------------------------> section projects */
+.projects{
+    display: flex;
+    flex-direction: column;
+
+}
+.projects__wrapper{
+    display: flex;
+    gap: 2rem;
+}
+.projects_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects__card img{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.projects__description{
+    margin: 0;
+}
+/* -----------------------------> about */
+.about p{
+    text-align: justify;
+    
+}
+/* --------------------------> footer */
+.footer_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.footer__wrapper__items{
+    display: flex;
+    gap: 6rem;
+
+}
+.footer__wrapper_items-card:not(:last-child) p {
+    text-decoration: underline;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+.copyright a {
+    text-decoration: underline;
+    font-weight: bold;
 }
