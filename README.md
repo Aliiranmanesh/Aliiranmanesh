@@ -5,9 +5,9 @@
 
 - 🌱 I’m currently learning **bootstrap and tailwind**
 
-- 📝 I regularly write articles on [linuxtimes.ir](linuxtimes.ir)
+- 📝 My bog is [linuxtimes.ir](linuxtimes.ir)
 
-- 📫 How to reach me **iranmanesh999@gmail.com**
+- 📫 How to reach me **ali.ir.dev@gmail.com**
 
 - ⚡ Fun fact **I smile a lot and bring positive energy everywhere I go**
 
