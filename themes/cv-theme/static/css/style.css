@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at 20% 30%, #0a0a0a, #0d1117);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    color: #e6edf3;
+    line-height: 1.65;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    direction: ltr;
+}
+
+.cv-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cv-card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: rgba(18, 22, 30, 0.55);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    direction: ltr;
+    transition: all 0.3s ease;
+}
+
+.cv-card:hover {
+    box-shadow: 0 12px 48px 0 rgba(0, 255, 100, 0.15);
+    border-color: rgba(0, 255, 100, 0.3);
+}
+
+.cv-left-side {
+    flex: 1;
+    padding: 2.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.cv-right-side {
+    flex: 1.5;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.profile-img {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-img img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(0, 255, 100, 0.4);
+    transition: all 0.3s ease;
+}
+
+.profile-img img:hover {
+    transform: scale(1.03);
+    border-color: #00ff64;
+    box-shadow: 0 0 20px rgba(0, 255, 100, 0.2);
+}
+
+/* فقط عنوان‌ها (h3) افکت دارن */
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid rgba(0, 255, 100, 0.5);
+    display: inline-block;
+    direction: ltr;
+    text-align: left;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+h3:hover {
+    border-bottom-color: #00ff64;
+    letter-spacing: 1px;
+    transform: translateX(3px);
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    direction: ltr;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* افکت خیلی خفیف برای تماس‌ها */
+.contact-info p:hover {
+    background: rgba(0, 255, 100, 0.08);
+    transform: translateX(3px);
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 0.5rem;
+    direction: ltr;
+}
+
+/* افکت مخصوص skills - اصلی‌ترین افکت */
+.skills li {
+    position: relative;
+    background: rgba(0, 255, 100, 0.1);
+    padding: 0.45rem 1.2rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 255, 100, 0.25);
+    direction: ltr;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.skills li:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: rgba(0, 255, 100, 0.25);
+    border-color: #00ff64;
+    box-shadow: 0 5px 15px rgba(0, 255, 100, 0.25);
+    backdrop-filter: blur(4px);
+}
+
+.skills li::before {
+    content: '';
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #00ff64;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.skills li:hover::before {
+    width: 8px;
+    height: 8px;
+    box-shadow: 0 0 8px #00ff64;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 100, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(0, 255, 100, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 100, 0);
+    }
+}
+
+.name-title {
+    margin-bottom: 2rem;
+    direction: ltr;
+}
+
+.name-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff, #88ffaa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.name-title h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #88ffaa;
+    border-left: 4px solid #00ff64;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.summary p {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 1rem 0 1.8rem 0;
+    color: #cdd9f4;
+    direction: ltr;
+    text-align: left;
+}
+
+.job {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    direction: ltr;
+    transition: all 0.2s ease;
+}
+
+.job:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0.3rem;
+}
+
+.job-header strong {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.job-header span {
+    font-size: 0.85rem;
+    background: rgba(0, 255, 100, 0.15);
+    padding: 0.25rem 0.9rem;
+    border-radius: 2rem;
+    color: #88ffaa;
+}
+
+.job-company {
+    color: #7ca8e0;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.job ul {
+    margin-left: 1.2rem;
+    color: #b4c4e0;
+    font-size: 0.95rem;
+}
+
+.job ul li {
+    margin-bottom: 0.3rem;
+}
+
+.projects-card {
+    background: rgba(0, 255, 100, 0.03);
+    border: 1px solid rgba(0, 255, 100, 0.15);
+}
+
+.projects-card:hover {
+    background: rgba(0, 255, 100, 0.06);
+}
+
+.view-all {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    border: 1px solid #00ff64;
+    border-radius: 2rem;
+    color: #00ff64;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #00ff64;
+    color: #0a0a0a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 100, 0.2);
+}
+
+@media (max-width: 900px) {
+    .cv-card {
+        flex-direction: column;
+    }
+    
+    .cv-left-side {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .cv-left-side, .cv-right-side {
+        padding: 1.8rem;
+    }
+
+    .name-title h1 {
+        font-size: 2.4rem;
+    }
+    
+    .skills li:hover {
+        transform: translateY(-2px) scale(1.02);
+    }
+}

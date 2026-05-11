@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cv-container">
+    <div class="cv-card glass-card">
+        
+        <!-- ستون سمت چپ: Contact و Technical Skills -->
+        <div class="cv-left-side">
+            <div class="profile-img">
+                <img src="{{ SITEURL }}/theme/images/Profile.png" alt="Ali Iranmanesh">
+            </div>
+            
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>📧 ali@example.com</p>
+                <p>📱 +98 912 000 0000</p>
+                <p>📍 Tehran, Iran</p>
+                <p>🔗 github.com/Aliiranmanesh</p>
+                <p>💼 linkedin.com/in/ali</p>
+            </div>
+            
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>Pelican</li>
+                    <li>Git & GitHub</li>
+                    <li>Docker</li>
+                    <li>PostgreSQL</li>
+                    <li>REST APIs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ستون سمت راست: Professional Summary و Work Experience -->
+        <div class="cv-right-side">
+            <div class="name-title">
+                <h1>Ali Iranmanesh</h1>
+                <h2>Senior Python Developer</h2>
+            </div>
+            
+            <div class="summary">
+                <h3>Professional Summary</h3>
+                <p>Backend developer with 5+ years of experience building scalable APIs and microservices. Passionate about clean code, open source, and helping Persian developers succeed in German-speaking tech industries.</p>
+            </div>
+            
+            <div class="experience">
+                <h3>Work Experience</h3>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <strong>Senior Backend Developer</strong>
+                        <span>2022 - Present</span>
+                    </div>
+                    <div class="job-company">Tech Innovators Inc.</div>
+                    <ul>
+                        <li>Designed and implemented 10+ RESTful APIs for payment system</li>
+                        <li>Optimized database queries, reducing response time by 30%</li>
+                        <li>Mentored 3 junior developers and led code reviews</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <strong>Python Developer</strong>
+                        <span>2020 - 2022</span>
+                    </div>
+                    <div class="job-company">Smart Startup Co.</div>
+                    <ul>
+                        <li>Developed authentication service with JWT and OAuth2</li>
+                        <li>Designed microservices architecture with Docker Compose</li>
+                        <li>Maintained 99.9% uptime for critical services</li>
+                    </ul>
+                </div>
+
+                <div class="job projects-card">
+                    <div class="job-header">
+                        <strong>Featured Projects</strong>
+                        <span>Portfolio</span>
+                    </div>
+                    <ul>
+                        <li><a href="#">TechLexicon</a> - IT glossary with 100+ terms</li>
+                        <li><a href="#">Modern CV Template</a> - Glassmorphism design</li>
+                        <li><a href="#">Project 3</a> - Coming soon</li>
+                    </ul>
+                    <div class="view-all">
+                        <a href="#" class="btn-outline">View All Projects →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}  
