@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pelican markdown
+      - run: pelican content -o output -s publishconf.py
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
